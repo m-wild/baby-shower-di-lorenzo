@@ -1,29 +1,18 @@
 # baby-shower-di-lorenzo
 
-This template should help get you started developing with Vue 3 in Vite.
+I was looking for a gift registry for our baby shower and the first page of Google results were all platforms which want to drive sales via affiliate links. 
+I wanted something super simple that could just list the gifts for people to source however they wish.
 
-## Recommended IDE Setup
+## Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The app uses Supabase for pretty much everything, with a small Vue3 UI on top of the PostgREST API.
 
-## Customize configuration
+1. Set up a new Supabase project
+1. Run the schema.sql script to create the db schema (and REST API etc)
+1. Set the `VITE_SUPABASE_URL` and `VITE_SUPABASE_KEY` in the .env file
+1. `npm install`
+1. `npm run dev`
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Preview
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+![screenshot of the app](./screenshot.jpg)
